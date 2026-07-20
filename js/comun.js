@@ -5,7 +5,8 @@ function paginaActual() {
 }
 
 //Arma la barra de navegacion de arriba
-function renderNavbar() {
+function renderNavbar() 
+{
   const cont = document.getElementById("nav");
   if (!cont) return;
   const activa = paginaActual();
