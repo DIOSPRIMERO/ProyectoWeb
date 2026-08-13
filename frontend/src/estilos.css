@@ -1,0 +1,25 @@
+/* Ajustes propios sobre Bootstrap. Se mantienen al minimo para
+   aprovechar las clases del framework. */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* El modal se dibuja desde React, sin el JavaScript de Bootstrap,
+   asi que el fondo oscuro necesita su propia opacidad. */
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+/* Evita que un titulo largo desarme la tabla en pantallas chicas */
+.table td {
+  vertical-align: middle;
+}
+
+.table a {
+  color: var(--bs-body-color);
+}
+
+.table a:hover {
+  color: var(--bs-primary);
+}
